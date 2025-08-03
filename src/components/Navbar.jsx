@@ -11,47 +11,24 @@ const navItems = [
   {
     name: "Perfumes",
     path: "/perfumes",
-    dropdown: [
-      { name: "Men's Perfume", path: "/perfumes/men" },
-      { name: "Women's Perfume", path: "/perfumes/women" },
-    ],
+    // dropdown: [
+    //   // { name: "Men's Perfume", path: "/perfumes/men" },
+    //   // { name: "Women's Perfume", path: "/perfumes/women" },
+    // ],
   },
   {
     name: "Men Fragrance",
-    path: "/men-fragrance",
-    dropdown: [
-      { name: "Men's Watches", path: "/men/watches" },
-      { name: "Men's Perfumes", path: "/men/perfumes" },
-    ],
+    
   },
-  { name: "Asaf watches", path: "/asaf-watches" },
+  { name: "women Fragrance ", path: "/asaf-watches" },
   {
-    name: "Arrogate Collection",
-    path: "/arrogate-collection",
-    dropdown: [
-      { name: "Luxury Line", path: "/arrogate/luxury" },
-      { name: "Limited Editions", path: "/arrogate/limited" },
-    ],
-  },
-  {
+   
     name: "Best Seller",
-    path: "/best-seller",
-    dropdown: [
-      { name: "Top Rated", path: "/best/top" },
-      { name: "Most Purchased", path: "/best/most" },
-    ],
+    
   },
   { name: "Private Collection", path: "/private" },
-  { name: "The art of dedication", path: "/dedication" },
-  {
-    name: "Care products",
-    path: "/care-products",
-    dropdown: [
-      { name: "Skin Care", path: "/care/skin" },
-      { name: "Hair Care", path: "/care/hair" },
-    ],
-  },
-  { name: "Day Offers", path: "/offers" },
+ 
+ 
   { name: "All Products", path: "/all-products" },
 ]
 
