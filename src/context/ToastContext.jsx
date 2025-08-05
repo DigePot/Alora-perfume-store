@@ -1,0 +1,29 @@
+"use client"
+
+import { createContext, useContext, useState, useCallback } from "react"
+import ToastMessage from "../components/ToastMessage"
+
+const ToastContext = createContext()
+
+export const ToastProvider = ({ children }) => {
+  const [toast, setToast] = useState(null)
+
+  const showToast = useCallback((message, type = "success") => {
+    setToast({ message, type })
+  }, [])
+
+  const hideToast = useCallback(() => {
+    setToast(null)
+  }, [])
+
+  return (
+    <ToastContext.Provider value={{ showToast }}>
+      {children}
+      {toast && <ToastMessage message={toast.message} type={toast.type} onClose={hideToast} />}
+    </ToastContext.Provider>
+  )
+}
+
+export const useToast = () => {
+  return useContext(ToastContext)
+}
