@@ -1,7 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState, useCallback } from "react"
-import ToastMessage from "../components/ToastMessage"
+import ToastMessage from "../utils/ToastMessage"
 
 const ToastContext = createContext()
 
